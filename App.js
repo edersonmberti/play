@@ -1,8 +1,8 @@
 import React from 'react'
-import { HomeScreen } from './src/screens'
+import { HomeScreen, PlayerScreen } from './src/screens'
 
 export default App = () => {
     return (
-      <HomeScreen />
+      <PlayerScreen />
     )
 }
