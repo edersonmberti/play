@@ -1,10 +1,10 @@
-export { default as ArrowIcon } from './arrow.svg'
-export { default as ListIcon } from './list.svg'
-export { default as NextIcon } from './next.svg'
-export { default as PauseIcon } from './pause.svg'
-export { default as PlayIcon } from './play.svg'
-export { default as PlayFilledIcon } from './play_filled.svg'
-export { default as PreviousIcon } from './previous.svg'
-export { default as SearchIcon } from './search.svg'
-export { default as SoundIcon } from './sound.svg'
-export { default as SpeakerIcon } from './speaker.svg' 
+export { ArrowIcon } from './arrow.icon';
+export { ListIcon } from './list.icon';
+export { NextIcon } from './next.icon';
+export { PauseIcon } from './pause.icon';
+export { PlayIcon } from './play.icon';
+export { PlayFilledIcon } from './play-filled.icon';
+export { PreviousIcon } from './previous.icon';
+export { SearchIcon } from './search.icon'
+export { SoundIcon } from './sound.icon'
+export { SpeakerIcon } from './speaker.icon'
