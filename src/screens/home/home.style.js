@@ -3,8 +3,9 @@ import { StyleSheet, Platform } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 30,
+    paddingTop: 30,
     paddingHorizontal: 15,
+    backgroundColor: '#FFFFFF',
   },
   title: {
     fontSize: 32,
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
   },
   footerHeight: {
     height: 80,
-  }
+  },
 });
 
 export default styles;
