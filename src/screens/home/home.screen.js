@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
-import { PlaylistCard } from '../../components'
+import { View, Text, FlatList } from 'react-native';
+import { PlaylistCard } from '../../components';
 
 import Playlists from '../../mock/data';
 
@@ -10,11 +10,13 @@ export const HomeScreen = () => {
   return (
     <View style={Styles.container}>
       <Text style={Styles.title}>Playlists</Text>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        {Playlists.map((props) => (
-          <PlaylistCard {...props} key={props.id} />
-        ))}
-      </ScrollView>
+      <FlatList
+        data={Playlists}
+        renderItem={({ item }) => <PlaylistCard {...item} />}
+        keyExtractor={({ id }) => String(id)}
+        showsVerticalScrollIndicator={false}
+        ListFooterComponent={() => <View style={Styles.footerHeight} />}
+      />
     </View>
   );
 };

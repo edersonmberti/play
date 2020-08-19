@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: '#414141',
   },
+  footerHeight: {
+    height: 80,
+  }
 });
 
 export default styles;

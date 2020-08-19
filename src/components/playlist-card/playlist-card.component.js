@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { ArrowIcon, Arrow } from '../../assets/icons';
+import { ArrowIcon } from '../../assets/icons';
 
 import Styles from './playlist-card.style';
 
@@ -23,7 +23,7 @@ export const PlaylistCard = ({ title, imageUrl, quantity, duration }) => {
           alert('Clique');
         }}
         style={Styles.icon}>
-        <Arrow fill='#1d1d'/>
+        <ArrowIcon />
       </TouchableOpacity>
     </View>
   );
