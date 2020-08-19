@@ -1,15 +1,38 @@
 import { StyleSheet } from 'react-native';
 
+const imageDimensions = {
+  width: 150,
+  height: 100,
+  borderRadius: 10,
+};
+
 const styles = StyleSheet.create({
   container: {
     marginVertical: 20,
     flexDirection: 'row',
     alignItems: 'center',
   },
+  imageContainer: {
+    ...imageDimensions,
+    position: 'relative',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
   image: {
-    width: 150,
-    height: 100,
-    borderRadius: 10,
+    ...imageDimensions,
+    zIndex: 1,
+  },
+  overlapImage: {
+    ...imageDimensions,
+    position: 'absolute',
+    zIndex: 2,
+    opacity: 0.5,
   },
   wrapper: {
     marginLeft: 10,

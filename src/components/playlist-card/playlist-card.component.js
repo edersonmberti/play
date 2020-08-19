@@ -1,18 +1,24 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { ArrowIcon } from '../../assets/icons';
+import { getRandomColor } from '../../utils';
 
 import Styles from './playlist-card.style';
 
 export const PlaylistCard = ({ title, imageUrl, quantity, duration }) => {
   return (
     <View style={Styles.container}>
-      <Image
-        source={{
-          uri: imageUrl,
-        }}
-        style={Styles.image}
-      />
+      <View style={Styles.imageContainer}>
+        <Image
+          source={{
+            uri: imageUrl,
+          }}
+          style={Styles.image}
+        />
+        <View
+          style={[Styles.overlapImage, { backgroundColor: getRandomColor() }]}
+        />
+      </View>
       <View style={Styles.wrapper}>
         <Text style={Styles.title}>{title}</Text>
         <Text
